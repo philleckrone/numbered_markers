@@ -1,0 +1,34 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fswiss\fcharset0 Arial;}}
+\viewkind4\uc1
+\pard\sa200\sl276\slmult1\f0\fs28\b MARCADORES NUMERADOS 1.7 (COMPLEMENTO DE PARATEXT)\b0\fs22\par
+\par
+\b PROP\'d3SITO\b0\par
+En usfm.sty algunos marcadores de p\'e1rrafo tienen una forma sin n\'famero que significa lo mismo que el nivel 1: \\q = \\q1, \\mt = \\mt1, \\s = \\s1, \\li = \\li1, etc. Un proyecto que siempre usa una sola forma de un marcador est\'e1 bien (por ejemplo solo \\s, nunca \\s1 ni \\s2). Cuando un proyecto usa la forma sin n\'famero Y una forma numerada (por ejemplo \\mt en algunos libros y \\mt1 y \\mt2 en otros), la forma sin n\'famero debe cambiarse a la forma "1" para que el marcado sea coherente.\par
+Marcadores numerados es un complemento (plugin) de Paratext. Encuentra esos marcadores "mezclados" en todo el proyecto y cambia la forma sin n\'famero a la forma "1" en los marcadores que usted marque (o, en un marcador que no usa el nivel 2 ni superiores, puede quitar un "1" innecesario). Igual que Paratext, solo cambia los libros (y cap\'edtulos) que usted tiene permiso para editar, y muestra los dem\'e1s como no cambiados.\par
+Marcadores revisados: \\imt \\imte \\is \\io \\ili \\iq \\mt \\mte \\ms \\s \\sd \\pi \\q \\qm \\li \\lim \\liv \\ph. Los marcadores de car\'e1cter como \\qs, \\qc o \\lit nunca se tocan.\par
+Un nivel numerado que usfm.sty no define (por ejemplo \\s5, que algunos equipos usan como marca de bloque) aparece en "No est\'e1n en usfm.sty", pero no hace que un marcador cuente como mezclado y nunca se cambia.\par
+\par
+\b INSTALACI\'d3N\b0\par
+1. Descargue Install_Phils_tools.exe de la carpeta Paratext_Plugins. Si el navegador le advierte sobre el archivo, elija conservarlo.\par
+2. Cierre Paratext.\par
+3. Haga doble clic en Install_Phils_tools.exe. Si Windows dice que protegi\'f3 su PC, haga clic en "M\'e1s informaci\'f3n" y luego en "Ejecutar de todas formas" (el instalador todav\'eda no est\'e1 firmado).\par
+4. Marque Marcadores numerados y haga clic en "Instalar / actualizar los marcados". Se instala en cada Paratext 9 del equipo. Si Windows le pide permiso, haga clic en S\'ed. La misma ventana actualiza el complemento m\'e1s adelante (su estado dice entonces "Actualizaci\'f3n disponible") o lo quita ("Quitar los marcados"), y su bot\'f3n "Gu\'eda del usuario" abre esta gu\'eda.\par
+5. Si las antiguas verificaciones personalizadas de Marcadores numerados (NumberedMarkers*.cms y .py) est\'e1n en la carpeta cms de Mis proyectos de Paratext, b\'f3rrelas.\par
+\par
+\b C\'d3MO USARLO\b0\par
+1. Abra el proyecto en una ventana de Escritura y elija Herramientas > Marcadores numerados...\par
+2. La ventana revisa los libros del proyecto (al principio, todos). Todav\'eda no se cambia nada. Para revisar solo algunos libros, haga clic en "Libros: n de m..." y m\'e1rquelos; los botones r\'e1pidos eligen Todos, Ninguno, Libros de la Biblia, Antiguo Testamento, Nuevo Testamento, Deuterocan\'f3nicos u Otros libros. Los libros sin marcar no se leen, as\'ed que sus marcadores no se cuentan ni se cambian. La selecci\'f3n se guarda para el proyecto (en la carpeta NumberedMarkers dentro de su carpeta "local").\par
+3. La tabla muestra cada marcador mezclado: cu\'e1ntas veces se usa la forma sin n\'famero y cada forma numerada, "Libros que puede convertir" y "Libros que no puede editar" (seg\'fan los permisos de usuario del proyecto), y d\'f3nde est\'e1 la forma sin n\'famero. Cuando usted solo puede editar algunos cap\'edtulos de un libro, se indican esos cap\'edtulos, p. ej. "HEB 2, 3". Debajo de la tabla est\'e1n los marcadores que usan una sola forma (no hace falta cambiar nada).\par
+4. Si usted no puede editar ning\'fan libro del proyecto, la ventana lo indica en rojo y el bot\'f3n Convertir est\'e1 desactivado. Pida a un administrador del proyecto que haga la conversi\'f3n.\par
+Los marcadores que usan una sola forma est\'e1n bien, pero un equipo puede querer cambiarlos igualmente (por ejemplo un proyecto que solo usa \\s y quiere \\s1). Marque "Mostrar tambi\'e9n los marcadores que usan una sola forma" para verlos debajo de los mezclados, como "Una forma": un marcador que solo se usa sin n\'famero puede pasar a la forma "1" (\\s a \\s1), y uno que solo se usa en la forma "1", sin nivel 2 ni superiores, puede perder el n\'famero (\\is1 a \\is). Nunca se marcan por usted, y "Seleccionar todo" solo marca los mezclados.\par
+5. Revise la columna "Cambiar a". Un marcador que usa el nivel 2 o superiores (por ejemplo \\mt2) solo puede pasar a la forma "1" (\\mt \u8594? \\mt1). Un marcador que no usa el nivel 2 ni superiores puede cambiarse en cualquiera de los dos sentidos: \\io \u8594? \\io1, o \\io1 \u8594? \\io para quitar un "1" innecesario. Se elige por usted el sentido con menos cambios (por ejemplo \\io1 \u8594? \\io cuando hay dos \\io1 y cientos de \\io); c\'e1mbielo con la lista desplegable. Las columnas de libros y "D\'f3nde cambiar\'e1" siguen su elecci\'f3n.\par
+6. Marque los marcadores que desea convertir (o haga clic en Seleccionar todo) y haga clic en "Convertir los marcadores seleccionados". Confirme con S\'ed.\par
+7. Primero siempre se agrega un punto al historial del proyecto ("Marcadores numerados: antes de convertir ..."). Si Paratext no puede agregarlo (por ejemplo mientras se edita el proyecto), no se cambia nada y un mensaje lo indica; termine o cierre la edici\'f3n y vuelva a intentarlo. Luego cada libro que va a cambiar se guarda completo como Backup_<LIBRO>_<hora>.bak en la carpeta NumberedMarkers dentro de la carpeta "local" del proyecto, y solo se cambian los cap\'edtulos que lo necesitan.\par
+8. El cuadro bajo "Resultados", al pie de la ventana (vac\'edo hasta que convierta), muestra los cambios por libro y marcador, luego "No se cambiaron, porque usted no tiene permiso para editar: ..." y cualquier texto que estaba en uso. Despu\'e9s la tabla se actualiza.\par
+Para volver atr\'e1s, restaure ese punto desde el historial del proyecto en Paratext, o use los archivos .bak.\par
+\par
+\b NOTAS\b0\par
+Paratext guarda cada cap\'edtulo cambiado en su forma est\'e1ndar (como cuando usted edita el cap\'edtulo en Paratext), as\'ed que los espacios y saltos de l\'ednea de esos cap\'edtulos tambi\'e9n pueden quedar ordenados. Los cap\'edtulos que no necesitan cambios no se escriben.\par
+La ventana est\'e1 en ingl\'e9s, espa\'f1ol o franc\'e9s, seg\'fan el idioma de la interfaz de Paratext. El n\'famero de versi\'f3n aparece en el t\'edtulo de la ventana.\par
+Paratext no env\'eda la carpeta "local" en Enviar/Recibir, as\'ed que las copias de seguridad quedan en este equipo.\par
+}

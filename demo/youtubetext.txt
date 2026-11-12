@@ -1,0 +1,21 @@
+﻿Numbered Markers is a Paratext tool that finds markers used in both their unnumbered and their numbered forms, such as \mt beside \mt1, or \li beside \li1. Both mean the same thing, but a project is easier to typeset and check when it uses one form. The tool shows where each form is used and changes the markers you tick, in the books you may edit. It adds a point to the project history and keeps a backup of each book it changes.
+
+Download Install_Phils_tools.exe from the Paratext Plugins folder, and tick Numbered Markers in it:
+https://short.do/HgUb7T
+
+0:16 How do I open Numbered Markers?
+0:24 What does the tool look for?
+0:42 What does a row show?
+0:59 Can I remove the 1 instead?
+1:14 Can I change markers that use one form?
+1:26 Can I leave some books out?
+1:41 How do I change the markers?
+1:49 What happens before the change?
+2:01 What was changed?
+2:15 How do I install the tool?
+
+Created with Claude AI.
+Narration: AI-generated voice (Microsoft Azure AI Speech, voice "Jenny").
+Music from Free To Use
+Source: https://freetouse.com/music
+Coconut Kind of Love by Aetheric

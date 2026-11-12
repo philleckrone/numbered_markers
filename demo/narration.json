@@ -1,0 +1,71 @@
+{
+  "cues": "{1} before a phrase shows box 1 of the step from there on, {0,2} boxes 0 and 2, {} none; the pointer goes on the first box named. Cues are not spoken or shown. 'q' is the step's question in the YouTube timecodes (youtubetext.txt).",
+  "youtube": {
+    "en": {
+      "about": "Numbered Markers is a Paratext tool that finds markers used in both their unnumbered and their numbered forms, such as \\mt beside \\mt1, or \\li beside \\li1. Both mean the same thing, but a project is easier to typeset and check when it uses one form. The tool shows where each form is used and changes the markers you tick, in the books you may edit. It adds a point to the project history and keeps a backup of each book it changes.",
+      "download": "Download Install_Phils_tools.exe from the Paratext Plugins folder, and tick Numbered Markers in it:",
+      "link": "https://short.do/HgUb7T",
+      "credits": [
+        "Created with Claude AI.",
+        "Narration: AI-generated voice (Microsoft Azure AI Speech, voice \"Jenny\").",
+        "Music from Free To Use",
+        "Source: https://freetouse.com/music",
+        "Coconut Kind of Love by Aetheric"
+      ]
+    }
+  },
+  "steps": [
+    {
+      "id": "title",
+      "en": { "title": "Numbered Markers", "sub": "A Paratext tool: use one form of each marker, numbered or not", "text": "Numbered Markers is a Paratext tool. It finds markers used both with and without a number, and changes them to one form." }
+    },
+    {
+      "id": "s00_menu",
+      "en": { "title": "Open it from the Tools menu", "q": "How do I open Numbered Markers?", "text": "In Paratext, open the project. Then choose {0}Tools, then {1}Numbered Markers." }
+    },
+    {
+      "id": "s01_open",
+      "en": { "title": "Mixed markers", "q": "What does the tool look for?", "text": "{0}A marker like \\mt means the same as \\mt1. Using both forms in one project is what the tool looks for. {1}Each row is a marker used in both forms. {2}Markers that use only one form are fine, and are listed here." }
+    },
+    {
+      "id": "s02_row",
+      "en": { "title": "One marker", "q": "What does a row show?", "text": "{0}Here, \\mt is used twice without a number, beside \\mt1, \\mt2 and \\mt3. {1}Change to shows what will change: \\mt becomes \\mt1. {2}These columns show the books and places that will change." }
+    },
+    {
+      "id": "s03_direction",
+      "en": { "title": "The other direction", "q": "Can I remove the 1 instead?", "text": "{0}With no level 2, the 1 can be taken off instead. \\li is used forty thousand times, \\li1 only twelve hundred. {1}So the tool chooses the direction with fewer changes, and you can change it here." }
+    },
+    {
+      "id": "s04_oneform",
+      "en": { "title": "Markers with only one form", "q": "Can I change markers that use one form?", "text": "{0}Tick Also show markers that use only one form, {1}to change those too, for example to number every \\s. These rows are never ticked for you." }
+    },
+    {
+      "id": "s05_books",
+      "en": { "title": "Choose the books", "q": "Can I leave some books out?", "text": "{0}Books opens the list of books to examine. {1}Books you untick are not read, so they are neither counted nor changed. {2}These buttons tick groups of books. The choice is saved for the project." }
+    },
+    {
+      "id": "s06_select",
+      "en": { "title": "Choose the markers", "q": "How do I change the markers?", "text": "{0}Select all {1}ticks every mixed marker. {2}Then click Convert selected markers." }
+    },
+    {
+      "id": "s07_confirm",
+      "en": { "title": "Check, then convert", "q": "What happens before the change?", "text": "{0}The tool says what will change. It first adds a point to the project history, and saves a backup of each book it changes. {1}Click Yes." }
+    },
+    {
+      "id": "s08_results",
+      "en": { "title": "Done", "q": "What was changed?", "text": "{0}Results lists the changes in each book, the books that were not changed, and the folder of the backups. {1}The markers are no longer mixed. Only books you may edit are changed." }
+    },
+    {
+      "id": "sec_install",
+      "en": { "title": "Installing the tool", "q": "How do I install the tool?", "text": "Installing the tool." }
+    },
+    {
+      "id": "i5_ready",
+      "en": { "title": "Ready to use", "text": "Start Paratext again. {1,0}Numbered Markers is now on the Tools menu." }
+    },
+    {
+      "id": "end",
+      "en": { "title": "Numbered Markers", "sub": "Find mixed markers  ·  Choose the direction  ·  History point and backups", "text": "Numbered Markers finds markers used in both forms, and changes them to one form, safely, in the books you may edit." }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\bin\Release\NumberedMarkersTestHost.exe
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\bin\Release\NumberedMarkersTestHost.pdb
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\bin\Release\mscorlib.dll
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\bin\Release\es\mscorlib.resources.dll
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\bin\Release\normidna.nlp
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\bin\Release\normnfc.nlp
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\bin\Release\normnfd.nlp
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\bin\Release\normnfkc.nlp
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\bin\Release\normnfkd.nlp
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\obj\Release\TestHost.csprojResolveAssemblyReference.cache
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\obj\Release\NumberedMarkersTestHost.exe
+C:\ClaudeCode Projects\Numbered_Markers\tests\TestHost\obj\Release\NumberedMarkersTestHost.pdb

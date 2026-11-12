@@ -1,0 +1,18 @@
+\id TOB Numbered markers fixture
+\mt Bare title
+\mt2 Sub title
+\imte bare imte only
+\io1 Outline
+\c 1
+\s Bare heading
+\s5
+\p
+\v 1 text \qs Selah\qs*
+\qc centered
+\lit litany
+\q bare poetry
+\q2 poetry two
+\pi para
+\v 2 more
+\q
+\v 3 last

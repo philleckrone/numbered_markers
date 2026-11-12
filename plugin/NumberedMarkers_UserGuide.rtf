@@ -1,0 +1,34 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fswiss\fcharset0 Arial;}}
+\viewkind4\uc1
+\pard\sa200\sl276\slmult1\f0\fs28\b NUMBERED MARKERS 1.7 (PARATEXT PLUGIN)\b0\fs22\par
+\par
+\b PURPOSE\b0\par
+In usfm.sty some paragraph markers have an unnumbered form that means the same as level 1: \\q = \\q1, \\mt = \\mt1, \\s = \\s1, \\li = \\li1, and so on. A project that always uses only one form of a marker is fine (for example only \\s, never \\s1 or \\s2). When a project uses the unnumbered form AND a numbered form (for example \\mt in some books and \\mt1 and \\mt2 in others), the unnumbered form should be changed to the "1" form so the markup is consistent.\par
+Numbered Markers is a Paratext plugin. It finds those "mixed" markers in the whole project and changes the unnumbered form to the "1" form for the markers you tick (or, for a marker that uses no level 2 or higher, can remove an unneeded "1" instead). Like Paratext itself, it changes only the books (and chapters) you have permission to edit, and lists the others as not changed.\par
+Markers checked: \\imt \\imte \\is \\io \\ili \\iq \\mt \\mte \\ms \\s \\sd \\pi \\q \\qm \\li \\lim \\liv \\ph. Character markers such as \\qs, \\qc or \\lit are never touched.\par
+A numbered level that usfm.sty does not define (for example \\s5, used by some teams as a chunk marker) is shown under "Not in usfm.sty", but it does not make a marker count as mixed and is never changed.\par
+\par
+\b INSTALLING\b0\par
+1. Download Install_Phils_tools.exe from the Paratext_Plugins folder. If your browser warns about the file, choose to keep it.\par
+2. Close Paratext.\par
+3. Double-click Install_Phils_tools.exe. If Windows says it protected your PC, click "More info", then "Run anyway" (the installer is not signed yet).\par
+4. Tick Numbered Markers and click "Install / update ticked". It installs into every Paratext 9 on the computer. If Windows asks for permission, click Yes. The same window updates the plugin later (its status then says "Update available") or removes it ("Remove ticked"), and its "User guide" button opens this guide.\par
+5. If the older Numbered Markers custom checks (NumberedMarkers*.cms and .py) are in your My Paratext Projects\\cms folder, delete them.\par
+\par
+\b HOW TO USE\b0\par
+1. Open the project in a Scripture window and choose Tools > Numbered Markers...\par
+2. The window scans the books of the project (at first, every book). Nothing is changed yet. To examine only some books, click "Books: n of m..." and tick them; the quick buttons choose All, None, Bible books, Old Testament, New Testament, Deuterocanon or Other books. Unticked books are not read at all, so their markers neither count nor change. The choice is saved for the project (in the NumberedMarkers folder inside its "local" folder).\par
+3. The table lists each mixed marker: how often the unnumbered form and each numbered form are used, "Books you can convert" and "Books you cannot edit" (from the project's user permissions), and where the unnumbered form is. When you may edit only some chapters of a book, those chapters are named, e.g. "HEB 2, 3". Below the table are the markers that use only one form (no change needed).\par
+4. If you cannot edit any book of the project, the window says so in red and the Convert button is off. Ask an administrator of the project to do the conversion.\par
+Markers that use only one form are fine, but a team may still want to change them (for example a project that uses only \\s and wants \\s1). Tick "Also show markers that use only one form" to list them below the mixed markers, marked "One form": a marker used only without a number can become the "1" form (\\s to \\s1), and one used only as the "1" form, with no level 2 or higher, can lose the number (\\is1 to \\is). They are never ticked for you, and "Select all" ticks only the mixed markers.\par
+5. Check the "Change to" column. A marker that uses a level 2 or higher (for example \\mt2) can only become the "1" form (\\mt \u8594? \\mt1). A marker that uses no level 2 or higher can go either way: \\io \u8594? \\io1, or \\io1 \u8594? \\io to remove an unneeded "1". The direction with fewer changes is chosen for you (for example \\io1 \u8594? \\io when there are two \\io1 and hundreds of \\io); change it with the drop-down. The book columns and "Where it will change" follow your choice.\par
+6. Tick the markers to convert (or click Select all) and click "Convert selected markers". Confirm with Yes.\par
+7. First a point is always added to the project history ("Numbered Markers: before converting ..."). If Paratext cannot add it (for example while the project is being edited), nothing is changed and a message says so; finish or close the editing and try again. Then each book that will change is saved whole as Backup_<BOOK>_<time>.bak in the NumberedMarkers folder inside the project's "local" folder, and only the chapters that need it are changed.\par
+8. The box under "Results" at the bottom of the window (empty until you convert) lists the changes per book and marker, then "Not changed, because you do not have permission to edit: ...", and any text that was in use. The table is then refreshed.\par
+To go back, restore that point from the project history in Paratext, or use the .bak files.\par
+\par
+\b NOTES\b0\par
+Paratext stores each changed chapter in its standard form (as when you edit the chapter in Paratext), so spacing and line breaks in those chapters may be tidied as well. Chapters that need no change are not written.\par
+The window is in English, Spanish or French, following Paratext's interface language. The version number is shown in the window title.\par
+Paratext does not send the "local" folder in Send/Receive, so the backups stay on this computer.\par
+}

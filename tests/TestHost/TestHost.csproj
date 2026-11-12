@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+          Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!-- Test host only: never deployed. Builds the plugin's Paratext-free sources into an exe. -->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NumberedMarkersTests</RootNamespace>
+    <AssemblyName>NumberedMarkersTestHost</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>5</LangVersion>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\NumberedMarkersPlugin\BookChoice.cs">
+      <Link>BookChoice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NumberedMarkersPlugin\BookChooserForm.cs">
+      <Link>BookChooserForm.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NumberedMarkersPlugin\ConversionRunner.cs">
+      <Link>ConversionRunner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NumberedMarkersPlugin\IBookSource.cs">
+      <Link>IBookSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NumberedMarkersPlugin\MarkerScanner.cs">
+      <Link>MarkerScanner.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NumberedMarkersPlugin\NumberedMarkersForm.cs">
+      <Link>NumberedMarkersForm.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NumberedMarkersPlugin\Strings.cs">
+      <Link>Strings.cs</Link>
+    </Compile>
+    <Compile Include="FolderBookSource.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

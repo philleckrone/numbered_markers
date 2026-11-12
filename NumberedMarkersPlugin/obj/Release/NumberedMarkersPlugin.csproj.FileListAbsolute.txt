@@ -1,0 +1,5 @@
+C:\ClaudeCode Projects\Numbered_Markers\NumberedMarkersPlugin\bin\Release\NumberedMarkersPlugin.dll
+C:\ClaudeCode Projects\Numbered_Markers\NumberedMarkersPlugin\bin\Release\NumberedMarkersPlugin.pdb
+C:\ClaudeCode Projects\Numbered_Markers\NumberedMarkersPlugin\obj\Release\NumberedMarkersPlugin.csprojResolveAssemblyReference.cache
+C:\ClaudeCode Projects\Numbered_Markers\NumberedMarkersPlugin\obj\Release\NumberedMarkersPlugin.dll
+C:\ClaudeCode Projects\Numbered_Markers\NumberedMarkersPlugin\obj\Release\NumberedMarkersPlugin.pdb
